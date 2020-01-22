@@ -1,10 +1,14 @@
+.row{
+	display: flex; 
+   }
+   
  /* Set height of the grid so .sidenav can be 100% (adjust if needed) */
-	.row.content {height: 1500px}
+	.row.content {height: 100%}
 	
 	/* Set gray background color and 100% height */
 	.sidenav {
 		background-color: #3fbac4;
-		height: 100%;
+		padding: 0;
 	}
 	
 	/* On small screens, set height to 'auto' for sidenav and grid */
@@ -12,6 +16,7 @@
 	  .sidenav {
 		height: auto;
 		padding: 15px;
+		position : relative;
 	  }
 
 	  .row.content {height: auto;} 
@@ -22,6 +27,8 @@
 		text-align: center;
 		background-color: black;
 		color: #3fbac4;
+		padding-top: 10px;
+		padding-bottom: 10px;
 	}
 
 	.photo{
@@ -31,7 +38,7 @@
 
 	   .titre-content{
 		/*border:2px solid black;*/
-		text-align: center;
+		text-align: left;
 		border-bottom: 5px solid #3fbac4;
 		
 	}
@@ -48,12 +55,9 @@
 
 	
 	img {
-		overflow:hidden;
-		-webkit-border-radius:20%;
-		-moz-border-radius:20%;
-		border-radius:50%;
-		width:50%;
-		height:10%;
+		border-radius:100px;
+		width:150px;
+		height:150px;
 		display:block;
 		margin-left:auto;
 		margin-right:auto;
@@ -69,14 +73,24 @@
 		height: auto;
 	}
 
-	.col-sm-12 i{
+	.titre-content i{
 		color: #3fbac4;
 	}
 
-	.gauche-img img {
+	.date-content i{
+		color: #3fbac4;
+	}
+
+	.gauche-img i {
 		text-align: center;
 		width:20%;
-		float: left;
 		margin: 20px;
+		font-size: 23px;
+	}
+
+	.loisir {
+		position: absolute;
+		bottom: 0;
+		width: 100%;
 	}
 
